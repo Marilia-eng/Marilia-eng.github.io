@@ -1,0 +1,127 @@
+﻿<!--#########################################################-->
+<!--#########################################################-->
+<!--##                                                     ##-->
+<!--## Site   : Cadastro                                   ##-->
+<!--## Autor  : Marília Maria Ibiapino Alencar             ##-->
+<!--## Data   : 27\02\2020                                 ##-->
+<!--## Versão : Versão do sítio                            ##-->
+<!--## Arquivo:Cadastro primira pagina                     ##-->
+<!--##                                                     ##-->
+<!--#########################################################-->
+<!--#########################################################-->
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+       <meta harset="utf-8" />
+       <title> Minha primeira página</title>
+    </head>
+    <body bgcolor="gray"> 
+    <h1><center>Cadastre-se</center></h1>
+   <center>
+   <h2>  
+    <form action="/pagina-processa-dados-do-form" method="post">
+    <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" />
+    </div>
+    <br>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+    </div>
+    <br>
+    
+        <label>Telefone</label>
+    <input type="number" name="telefone" id= tel required/>
+    <br>
+    <div>
+       <label>celular</label>
+      <input type="number" name="celular" id= celular required/>
+    </div>
+    <br>
+    <div>
+       <label>endereço</label>
+       <input type="text" name="endereço" id= name required/>
+    </div>
+    <br>
+    <div>
+       <label>CEP</label>
+       <input type="number" name="cep" id= cep required/>
+    </div>
+    <br>
+    <div>
+       <label>Bairro</label>
+       <input type="text" name="bairro" id=bairro required/>
+    </div><br>
+    <br>
+    <h1> Brasil</h1>  
+   <form action="" method="POST">
+   <label>Escolha um Estado </label>
+   <select id="estado" name="estado">
+   <option>Selecione...</option>
+    <optgroup label="Norte">
+   <option value= "AM">Amazonas</option>
+   <option value= "RR">Roraima</option>
+   <option value= "AP">Amapá</option>
+   <option value= "PA">Pará</option>
+   <option value= "TO">Tocantins</option>
+   <option value= "RO">Rondônia</option>
+   <option value= "AC">Acre</option>
+     </optgroup>
+     <optgroup label="Nordeste">
+   <option value= "MA">Maranhão</option>
+   <option value= "PI">Piaui</option>
+   <option value= "CE">Ceará</option>
+   <option value= "RN">Rio Grande do Norte</option>
+   <option value= "PE">Pernambuco</option>
+   <option value= "PB">Paraíba</option>
+   <option value= "SE">Sergipe</option>
+   <option value= "AL">Alagoas</option>
+   <option value= "BA">Bahia</option>
+     </optgroup>
+     <optgroup label="Cento-Oeste">
+   <option value= "MT">Mato Grosso</option>
+   <option value= "MS">Mato Grosso do Sul</option>
+   <option value= "GO">Goiás</option>
+     </optgroup>
+     <optgroup label="Sudeste">
+   <option value= "SP">São Paulo</option>
+   <option value= "RJ">Rio De Janeiro</option>
+   <option value= "ES">Espirito Santo</option>
+   <option value= "MG">Minas Gerais</option>
+     </optgroup>
+     <optgroup label="Sul">
+   <option value= "PR">Paraná</option>
+   <option value= "RS">Rio Grnade do Sul</option>
+   <option value= "SC">Santa Catarina</option>
+   </optgroup>
+   </select>
+   </form>
+   <br>
+   <form action="" method="POST">
+   <label> Deseja ser notificado </label>
+   <br>
+   <label>
+   <input type= "checkbox" name:"notificaçao" value="sim" check required>Sim
+   </label>
+   <br>
+   <label>
+   <input type= "checkbox" name:"notificaçao" value="não" check required>não
+   </label>
+   </form>
+   <br> 
+   <div>
+       <label>Digite a sua cidade</label>
+    </div>
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg"></textarea>
+    </div>
+    <div class="button">
+        <button type="submit">Enviar sua mensagem</button>
+    </div>
+</form>
+</h2>
+</center>
+<center><a href="minha pagina.html">Voltar</a></center>
+    </body>
+</html>
